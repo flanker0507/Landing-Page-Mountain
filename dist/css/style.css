@@ -64,6 +64,20 @@ header{
     display: none;
 }
 
+/* Hero Style */
+header .hero{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+header .hero h1{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 50px;
+    text-align: center;
+}
+
 @media screen and (max-width: 990px) {
 
     .navigation .box-navigation .box:nth-child(2){
@@ -112,4 +126,14 @@ header{
      .navigation .box-navigation .box:nth-child(3) i {
         font-size: 28px;
      }
+
+     header .hero h1{
+        font-size: 34px;
+     }
+}
+
+@media screen and (max-width: 768px) {
+    header .hero h1{
+        font-size: 28px;
+    }
 }
