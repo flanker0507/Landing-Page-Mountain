@@ -94,8 +94,27 @@ header .hero h1{
     justify-content: center;
 }
 
-.about .box-about img{
+.about .box-about .box:nth-child(1){
+    padding-right: 30px;
+}
+
+.about .box-about .box:nth-child(1) h1{
+    font-size: 42px;
+}
+
+.about .box-about .box:nth-child(1) p{
+    line-height: 2;
+}
+
+.about .box-about .box:nth-child(2) img{
     border-radius: 10px;
+    width: 600px;
+}
+
+@media screen and (max-width: 1200px) {
+    .about .box-about .box:nth-child(2) img {
+        width: 500px;
+    }
 }
 
 @media screen and (max-width: 990px) {
@@ -150,6 +169,33 @@ header .hero h1{
      header .hero h1{
         font-size: 34px;
      }
+
+     .about .box-about{
+        flex-direction: column-reverse;
+     }
+
+     .about .box-about .box:nth-child(1) {
+        text-align: center;
+        margin-top: 30px;
+     }
+
+     .about .box-about .box:nth-child(2) img {
+        width: 400px;
+     }
+}
+
+@media screen and (max-width: 575px) {
+    .about .box-about .box:nth-child(1) h1 {
+        font-size: 34px;
+    }
+
+    .about .box-about .box:nth-child(1) p {
+        width: 300px;
+    }
+
+    .about .box-about .box:nth-child(2) img {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 768px) {
