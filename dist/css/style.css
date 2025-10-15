@@ -61,7 +61,7 @@ header{
     display: none;
 }
 
-.navigation .box-navigation .box.box:nth-child(2) ul li i{
+.navigation .box-navigation .box:nth-child(2) ul li i{
     display: none;
 }
 
@@ -85,6 +85,7 @@ header .hero h1{
     height: 100vh;
     display: flex;
     align-items: center;
+    background-color: #dad7cd;
 }
 
 .about .box-about{
@@ -100,6 +101,7 @@ header .hero h1{
 
 .about .box-about .box:nth-child(1) h1{
     font-size: 42px;
+    margin-bottom: 20px;
 }
 
 .about .box-about .box:nth-child(1) p{
@@ -151,6 +153,7 @@ header .hero h1{
     .navigation .box-navigation .box:nth-child(2) ul li i{
         margin-inline: 10px;
         font-size: 24px;
+        display: inline-block;
     }
 
     .navigation .box-navigation .box:nth-child(2) ul li a{
@@ -179,6 +182,7 @@ header .hero h1{
      .about .box-about .box:nth-child(1) {
         text-align: center;
         margin-top: 30px;
+        padding-right: 0;
      }
 
      .about .box-about .box:nth-child(2) img {
@@ -194,24 +198,57 @@ header .hero h1{
 }
 
 
-/* @media screen and (max-width: 575px) {
+ @media screen and (max-width: 575px) {
     .about .box-about .box:nth-child(1) h1 {
         font-size: 34px;
     }
 
     .about .box-about .box:nth-child(1) p {
-        width: 14px;
+        font-size: 14px;
     }
 
     .about .box-about .box:nth-child(2) img {
         width: 300px;
-        top: 30px;
     }
-} */
+} 
 
 
 @media screen and (max-width: 475px) {
     header .hero h1{
         font-size: 20px;
+    }
+
+    .about .box-about .box:nth-child(1) h1 {
+        font-size: 28px;
+    }
+
+    .about .box-about .box:nth-child(1) p {
+        font-size: 12px;
+    }
+
+    .about .box-about .box:nth-child(2) img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navigation .box-navigation .box:nth-child(2){
+        right: 30px;
+    }
+
+    .navigation .box-navigation .menu-navigation.menu-active{
+        right: 50px;
+    }
+
+    .about .box-about .box:nth-child(1) h1 {
+        font-size: 24px;
+    }
+
+    .about .box-about .box:nth-child(1) p {
+        font-size: 10px;
+    }
+
+    .about .box-about .box:nth-child(2) img {
+        width: 200px;
     }
 }
