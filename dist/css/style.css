@@ -199,17 +199,17 @@ header .hero h1{
 .contact .box-contact form table tr td label{
     font-size: 20px;
     color: white;
-    margin-right: 20px;
 }
 
 .contact .box-contact form table tr td input{
-    padding: 15px 60px 15px 60px;
+    padding: 15px 60px 15px 20px;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
 .contact .box-contact form table tr td textarea{
     margin-top: 10px;
+    padding: 15px 200px 200px 20px;
 }
 
 /* contact style */
@@ -319,6 +319,19 @@ header .hero h1{
     header .hero h1{
         font-size: 28px;
     }
+
+    /* contact */
+    .contact{
+        height: 100%;
+        padding: 100px 0 100px 0;
+    }
+    .contact .box-contact{
+        flex-direction: column;
+    }
+
+    .contact .box-contact h1{
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -355,6 +368,16 @@ header .hero h1{
         height: auto;
      }
      /* gallery style */
+
+     /* contact */
+     .contact .box-contact form table tr td input{
+        padding: 10px 50px 15px 20px;
+     }
+
+     .contact .box-contact form table tr td textarea{
+        padding: 15px 150px 150px 20px;
+
+     }
 } 
 
 
@@ -411,4 +434,23 @@ header .hero h1{
      }
 
      /* famous style */
+
+     /* contact */
+     .contact{
+        padding: 120px 0 120px 0;
+     }
+     
+     .contact .box-contact h1{
+        font-size: 28px;
+     }
+
+     .contact .box-contact form table tr td input{
+            padding: 10px 40px 15px 20px;
+
+     }
+
+     .contact .box-contact form table tr td textarea{
+            padding: 15px 100px 100px 15px;
+
+     }
 }
