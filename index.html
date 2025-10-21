@@ -10,14 +10,20 @@
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
     rel="stylesheet"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>HOME | Landing Page</title>
 </head>
-<body>
+<body id="home">
     <header>
          <!-- navigation -->
          <section class="navigation">
             <div class="container">
-                <div class="box-navigation">
+                <div class="box-navigation animate__animated animate__fadeInDown">
                     <div class="box">
                         <h1>Logo</h1>
                     </div>
@@ -25,23 +31,23 @@
                         <ul>
                             <li>
                                 <i class="ri-home-3-line"></i>
-                                <a href="#">Beranda</a>
+                                <a href="#home">Beranda</a>
                             </li>
                             <li>
                                 <i class="ri-information-line"></i>
-                                <a href="#">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
                                 <i class="ri-dashboard-line"></i>
-                                <a href="#">Famous</a>
+                                <a href="#famous">Famous</a>
                             </li>
                             <li>
                                 <i class="ri-image-line"></i>
-                                <a href="#">Gallery</a>
+                                <a href="#gallery">Gallery</a>
                             </li>
                             <li>
                                 <i class="ri-contacts-line"></i>
-                                <a href="#">Contact</a>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -53,24 +59,24 @@
          </section>
          <!-- navigation -->
 
-         <!-- Header -->
+         <!-- Hero -->
           <section class="hero">
-            <h1>Amazing Montain yang ada di seluruh Dunia</h1>
+            <h1 class="animate__animated animate__pulse">Amazing Montain yang ada di seluruh Dunia</h1>
           </section>
-         <!-- Header -->
+         <!-- Hero -->
      </header>
 
      <!-- about -->
-     <section class="about">
+     <section class="about" id="about">
         <div class="container">
             <div class="box-about">
-                <div class="box">
+                <div class="box" data-aos="fade-right" data-aos-duration="1000">
                      <h1>Montain</h1>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius iusto nesciunt temporibus voluptates saepe, dolor dolore delectus quidem quae ipsa cum sed molestias minus placeat suscipit blanditiis! Laborum, molestiae delectus
                     </p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="zoom-in" data-aos-duration="1000">
                     <img src="./image/1.jpg" alt="About">
                 </div>
             </div>
@@ -79,20 +85,20 @@
      <!-- about -->
 
      <!-- famous -->
-      <section class="famous">
+      <section class="famous" id="famous">
         <div class="container">
             <div class="box-famous">
-                <div class="box">
+                <div class="box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
                     <img src="./image/everest-famous.jpg" alt="everest-famous">
                     <h1>Everest Montain</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora asperiores optio officia sapiente ex nisi?</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300">
                     <img src="./image/fuji-famous.jpg" alt="everest-famous">
                     <h1>Everest Montain</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora asperiores optio officia sapiente ex nisi?</p>
                 </div>
-                <div class="box">
+                <div class="box" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
                     <img src="./image/k2-famous.jpg" alt="everest-famous">
                     <h1>Everest Montain</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora asperiores optio officia sapiente ex nisi?</p>
@@ -104,15 +110,15 @@
      <!-- famous -->
 
      <!-- gallery -->
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="container">
             <div class="box-gallery">
-                <img src="./image/1.jpg" alt="">
-                <img src="./image/2.jpg" alt="">
-                <img src="./image/3.jpg" alt="">
-                <img src="./image/4.jpg" alt="">
-                <img src="./image/5.jpg" alt="">
-                <img src="./image/6.jpg" alt="">
+                <img src="./image/1.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100"/>
+                <img src="./image/2.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="300"/>
+                <img src="./image/3.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500"/>
+                <img src="./image/4.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="700"/>
+                <img src="./image/5.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="900"/>
+                <img src="./image/6.jpg" alt="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1100"/>
             </div>
         </div>
       </section>
@@ -121,11 +127,11 @@
      <!-- gallery -->
 
      <!-- contact -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
             <div class="box-contact">
-                <h1>Contact</h1>
-                <form action="">
+                <h1 data-aos="fade-right" data-aos-duration="1000">Contact</h1>
+                <form action="" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
                     <table>
                         <tr>
                             <td><label for="nama">Nama</label></td>
@@ -144,10 +150,20 @@
             </div>
         </div>
       </section>
-
      <!-- contact -->
 
+     <!-- footer -->
+      <footer>
+        <p>&copy; 2025 by MEBIDANG WEB</p>
+      </footer>
+     <!-- footer -->
+
     <script src="./dist/js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
     
 </body>
 </html>
